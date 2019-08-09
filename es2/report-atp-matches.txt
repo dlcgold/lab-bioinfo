@@ -1,0 +1,5 @@
+Andy Murray (R) --> 9
+Novak Djokovic (R) --> 7
+Stanislas Wawrinka (R) --> 4
+Dominic Thiem (R) --> 4
+Nick Kyrgios (R) --> 3
