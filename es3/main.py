@@ -31,7 +31,6 @@ seq_list = [seq_str[i:i+60] for i in range(0, len(seq_str), 60)]
 # estraggo la lista dei codoni
 cds_codon = [seq_str[i:i+3] for i in range(0, len(seq_str), 3)]
 
-
 # counter dei codoni
 count_codon = Counter(cds_codon)
 # trascrizione codoni in amminoacidi (in stringa)
@@ -46,7 +45,7 @@ out.write('\n'.join(seq_list))
 out.write('\n>Distribuzione di frequenza dei codoni\n')
 for key, elem in count_codon.most_common():
     out.write(key + ' => ' + str(elem) + '\n')
-out.write('>Distribuzione delle frequenze degli amminoacidi\n')
+    out.write('>Distribuzione delle frequenze degli amminoacidi\n')
 for key, elem in ammino_counter.most_common():
     out.write(key + ' => ' + str(elem) + '\n')
 if ammino_str == trans_str:
