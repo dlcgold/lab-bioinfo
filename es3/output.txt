@@ -71,127 +71,66 @@ TACACACACATGAACGGAGGCAAGAAAAACGGGCGGATTCTGACCTTGCCTCGGTCCAAT
 CCTTCCTAA
 >Distribuzione di frequenza dei codoni
 GAG => 77
->Distribuzione delle frequenze degli amminoacidi
 CTG => 67
->Distribuzione delle frequenze degli amminoacidi
 AAC => 53
->Distribuzione delle frequenze degli amminoacidi
 GTG => 49
->Distribuzione delle frequenze degli amminoacidi
 AAG => 47
->Distribuzione delle frequenze degli amminoacidi
 GAC => 44
->Distribuzione delle frequenze degli amminoacidi
 ATC => 41
->Distribuzione delle frequenze degli amminoacidi
 ACC => 39
->Distribuzione delle frequenze degli amminoacidi
 TTC => 39
->Distribuzione delle frequenze degli amminoacidi
 GGC => 37
->Distribuzione delle frequenze degli amminoacidi
 CCC => 37
->Distribuzione delle frequenze degli amminoacidi
 CTC => 35
->Distribuzione delle frequenze degli amminoacidi
 CAG => 32
->Distribuzione delle frequenze degli amminoacidi
 CAC => 31
->Distribuzione delle frequenze degli amminoacidi
 ATG => 30
->Distribuzione delle frequenze degli amminoacidi
 TGC => 30
->Distribuzione delle frequenze degli amminoacidi
 TAC => 29
->Distribuzione delle frequenze degli amminoacidi
 GAA => 29
->Distribuzione delle frequenze degli amminoacidi
 GGG => 28
->Distribuzione delle frequenze degli amminoacidi
 GCC => 28
->Distribuzione delle frequenze degli amminoacidi
 GTC => 28
->Distribuzione delle frequenze degli amminoacidi
 TCC => 27
->Distribuzione delle frequenze degli amminoacidi
 GAT => 26
->Distribuzione delle frequenze degli amminoacidi
 CGG => 25
->Distribuzione delle frequenze degli amminoacidi
 ATT => 23
->Distribuzione delle frequenze degli amminoacidi
 TCT => 22
->Distribuzione delle frequenze degli amminoacidi
 AAA => 21
->Distribuzione delle frequenze degli amminoacidi
 TAT => 21
->Distribuzione delle frequenze degli amminoacidi
 TTT => 20
->Distribuzione delle frequenze degli amminoacidi
 TGG => 20
->Distribuzione delle frequenze degli amminoacidi
 AAT => 19
->Distribuzione delle frequenze degli amminoacidi
 AGG => 18
->Distribuzione delle frequenze degli amminoacidi
 GGA => 17
->Distribuzione delle frequenze degli amminoacidi
 TGT => 17
->Distribuzione delle frequenze degli amminoacidi
 TTG => 17
->Distribuzione delle frequenze degli amminoacidi
 AGT => 17
->Distribuzione delle frequenze degli amminoacidi
 GCG => 16
->Distribuzione delle frequenze degli amminoacidi
 ACG => 16
->Distribuzione delle frequenze degli amminoacidi
 CCT => 16
->Distribuzione delle frequenze degli amminoacidi
 TCA => 15
->Distribuzione delle frequenze degli amminoacidi
 CCA => 15
->Distribuzione delle frequenze degli amminoacidi
 CCG => 14
->Distribuzione delle frequenze degli amminoacidi
 CGA => 14
->Distribuzione delle frequenze degli amminoacidi
 CGC => 13
->Distribuzione delle frequenze degli amminoacidi
 AGC => 12
->Distribuzione delle frequenze degli amminoacidi
 TCG => 12
->Distribuzione delle frequenze degli amminoacidi
 GGT => 11
->Distribuzione delle frequenze degli amminoacidi
 GCT => 11
->Distribuzione delle frequenze degli amminoacidi
 ACT => 10
->Distribuzione delle frequenze degli amminoacidi
 GCA => 10
->Distribuzione delle frequenze degli amminoacidi
 GTT => 8
->Distribuzione delle frequenze degli amminoacidi
 CTT => 8
->Distribuzione delle frequenze degli amminoacidi
 CAT => 7
->Distribuzione delle frequenze degli amminoacidi
 AGA => 7
->Distribuzione delle frequenze degli amminoacidi
 CTA => 6
->Distribuzione delle frequenze degli amminoacidi
 CGT => 5
->Distribuzione delle frequenze degli amminoacidi
 CAA => 5
->Distribuzione delle frequenze degli amminoacidi
 ACA => 5
->Distribuzione delle frequenze degli amminoacidi
 TTA => 3
->Distribuzione delle frequenze degli amminoacidi
 GTA => 2
->Distribuzione delle frequenze degli amminoacidi
 ATA => 1
->Distribuzione delle frequenze degli amminoacidi
 TAA => 1
 >Distribuzione delle frequenze degli amminoacidi
 L => 136

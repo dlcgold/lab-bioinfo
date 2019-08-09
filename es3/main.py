@@ -45,7 +45,7 @@ out.write('\n'.join(seq_list))
 out.write('\n>Distribuzione di frequenza dei codoni\n')
 for key, elem in count_codon.most_common():
     out.write(key + ' => ' + str(elem) + '\n')
-    out.write('>Distribuzione delle frequenze degli amminoacidi\n')
+out.write('>Distribuzione delle frequenze degli amminoacidi\n')
 for key, elem in ammino_counter.most_common():
     out.write(key + ' => ' + str(elem) + '\n')
 if ammino_str == trans_str:
