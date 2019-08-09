@@ -1,5 +1,5 @@
-from Bio import SeqIO
 import numpy as np
+from Bio import SeqIO
 from collections import Counter
 
 record = list(SeqIO.parse("./M10051.txt", "embl"))[0]
