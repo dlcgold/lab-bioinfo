@@ -30,7 +30,7 @@ for row in gtf_rows:
     if gtf_list[2] in ['exon', 'CDS']:
         # aggiorno il dizionario degli strand
         strand_dict[gene_id] = gtf_list[6]
-        key = gtf_list[2]+'$'+gene_id+'$'+transcript_id
+        key = gtf_list[2] + '$' + gene_id + '$' + transcript_id
         # se ho già la chiave recupero le feature e aggiungo la corrente
         # con gli estremi indicati nei campi 3 e 4
         if key in feat_dict:
@@ -53,8 +53,8 @@ for key in feat_dict:
         # converto in string
         tr_str = ''.join(exon_seq)
         # Stampo in output l'header FASTA del trascritto
-        out.write('\n>/source='+ref_id+' '+'/gene_id='+gene_id+' '+'/transcript_id='+transcript_id+' ' +
-                  '/type=transcript'+' '+'/length='+str(len(tr_str))+' '+'/strand='+strand_dict[gene_id] + '\n')
+        out.write('\n>/source=' + ref_id + ' ' + '/gene_id=' + gene_id + ' ' + '/transcript_id=' + transcript_id+' ' +
+                  '/type=transcript' + ' ' + '/length='+str(len(tr_str)) + ' ' + '/strand=' + strand_dict[gene_id] + '\n')
         # Stampo in output il trascritto separato in pezzi di 80bp
         # print(split_string(tr_sequence, 80, '\n'))
         out.write('\n'.join([tr_str[i:i+80]
@@ -73,7 +73,7 @@ for key in feat_dict:
         stop = 'YES' if cds_str[len(cds_str)-3: len(cds_str)] in [
             'TAG', 'TAA', 'TGA', 'tag', 'taa', 'tga'] else 'NO'
         # stampo
-        out.write('\n>/source='+ref_id+' '+'/gene_id='+gene_id+' '+'/transcript_id='+transcript_id+' '+'/type=cds'+' '+'/length=' +
-                  str(len(cds_str))+' '+'/strand='+strand_dict[gene_id]+' '+'/start_codon='+start+' '+'/stop_codon='+stop + '\n')
+        out.write('\n>/source=' + ref_id + ' ' + '/gene_id=' + gene_id + ' ' + '/transcript_id=' + transcript_id + ' ' + '/type=cds' + ' ' + '/length=' +
+                  str(len(cds_str)) + ' ' + '/strand=' + strand_dict[gene_id] + ' ' + '/start_codon=' + start + ' ' + '/stop_codon=' + stop + '\n')
         out.write('\n'.join([cds_str[i:i+80]
                              for i in range(0, len(cds_str), 80)]))
