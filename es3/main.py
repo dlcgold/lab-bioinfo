@@ -1,8 +1,8 @@
-import numpy as np
 from Bio import SeqIO
-from collections import Counter
 
-record = list(SeqIO.parse("./M10051.txt", "embl"))[0]
+
+out = open('output.txt', 'w')
+record = list(SeqIO.parse("./M10041.txt", "embl"))[0]
 identifier = record.name
 org = record.annotations['data_file_division']
 
@@ -15,38 +15,11 @@ for i in record.features:
         trans_str = str(i.qualifiers['translation'][0])
 
 # seleziono la parte utile dell'intera sequenza
-seq_str = str(record.seq)[cds_start:cds_end]
+seq_str = str(record.seq)
 
-gen_file = np.loadtxt('./genetic-code.txt', dtype=str)
-
-# genero il dizionario del file genetic-code
-
-tuple_gen = {sub.upper(): elem[0]
-             for elem in gen_file for sub in elem.split(',')[1:]}
-
-# separo la sequenze in sottosequenze da 60 caratteri
-seq_list = [seq_str[i:i+60] for i in range(0, len(seq_str), 60)]
-
-# estraggo la lista dei codoni
-cds_codon = [seq_str[i:i+3] for i in range(0, len(seq_str), 3)]
-
-# counter dei codoni
-count_codon = Counter(cds_codon)
-# trascrizione codoni in amminoacidi (in stringa)
-ammino_str = ''.join([tuple_gen[codon]
-                      for codon in cds_codon if tuple_gen[codon].isupper()])
-ammino_counter = Counter(ammino_str)
-
-# output su file come da richiesta
-with open('output.txt', 'w') as out:
-    out.write('>CDS '+identifier+' '+org + '\n')
-    out.write('\n'.join(seq_list))
-    out.write('\n>Distribuzione di frequenza dei codoni\n')
-    for key, elem in count_codon.most_common():
-        out.write(key + ' => ' + str(elem) + '\n')
-    out.write('>Distribuzione delle frequenze degli amminoacidi\n')
-    for key, elem in ammino_counter.most_common():
-        out.write(key + ' => ' + str(elem) + '\n')
-    if ammino_str == trans_str:
-        out.write(
-            'La traduzione della CDS coincide con la traduzione riportata nel file input')
+# stampo (sequenze in pezzi di 80)
+out.write('>'+identifier+'-'+org + '\n')
+out.write('\n'.join([seq_str[i:i+80] for i in range(0, len(seq_str), 80)]))
+out.write('\n>' + identifier + '-' + org + '; CDS start = ' +
+          str(cds_start) + '; CDS end = ' + str(cds_end) + '\n')
+out.write('\n'.join([trans_str[i:i+80] for i in range(0, len(trans_str), 80)]))
