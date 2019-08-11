@@ -16,5 +16,9 @@ for feat in record_fastaq:
         out.write(str(feat.seq[0:[feat._per_letter_annotations["phred_quality"].index(
             i) for i in feat._per_letter_annotations["phred_quality"] if i < q][0]]) + '\n')
         out.write('+' + feat.name + '\n')
-        out.write(
-            "".join([chr(elem + 33) for elem in feat._per_letter_annotations["phred_quality"][0:[feat._per_letter_annotations["phred_quality"].index(i) for i in feat._per_letter_annotations["phred_quality"] if i < q][0]]]) + '\n')
+        out.write("".join([chr(elem + 33) for elem in
+                           feat._per_letter_annotations["phred_quality"][0:[
+                               feat._per_letter_annotations["phred_quality"].index(
+                                   i)
+                               for i in feat._per_letter_annotations["phred_quality"]
+                               if i < q][0]]]) + '\n')
