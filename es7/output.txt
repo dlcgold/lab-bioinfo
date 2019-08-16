@@ -1,3 +1,0 @@
-Read	Reference	Software	Position	\#Matches
-r001	chr1		BOWTIE		30		15
-r002	chr22		BWA		32		17
